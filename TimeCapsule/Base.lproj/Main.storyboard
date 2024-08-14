@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7yV-LG-SNV">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Time Capsule-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TimeCapsule" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Qb0-8C-JIF">
+                                <rect key="frame" x="20" y="173" width="353" height="605"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nho-e5-AVz">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="147.66666666666666"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Half-Day" cornerStyle="medium">
+                                            <backgroundConfiguration key="background" image="halfdayBanner">
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="strokeColor" red="0.96862745289999996" green="0.80000001190000003" blue="0.47058826679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="51"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="0xK-d8-mMT" kind="show" id="fys-3u-kzW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcO-Jb-mam">
+                                        <rect key="frame" x="0.0" y="152.66666666666669" width="353" height="147.33333333333331"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Day" cornerStyle="medium">
+                                            <backgroundConfiguration key="background" image="weekBanner" strokeWidth="1" strokeOutset="1">
+                                                <color key="strokeColor" red="0.29803922770000002" green="0.61960786580000005" blue="0.65098041299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="51"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="0qj-L7-BzU" kind="show" id="wEs-uk-Hr2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yVK-hM-ZbF">
+                                        <rect key="frame" x="0.0" y="305" width="353" height="147.66666666666663"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Week" cornerStyle="medium" titleAlignment="automatic">
+                                            <backgroundConfiguration key="background" image="monthBanner">
+                                                <color key="strokeColor" red="0.86666667460000002" green="0.29803922770000002" blue="0.2235293984" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="51"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="qIB-QR-6s4" kind="show" id="YLK-ZZ-urv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Oq-lx-Lm3">
+                                        <rect key="frame" x="0.0" y="457.66666666666657" width="353" height="147.33333333333331"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Month" cornerStyle="medium">
+                                            <backgroundConfiguration key="background" image="yearBanner" strokeWidth="1">
+                                                <color key="strokeColor" red="0.61960786580000005" green="0.2470588088" blue="0.90196079019999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="51"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="fGe-xg-6bj" kind="show" id="YFl-ve-sXO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Qb0-8C-JIF" secondAttribute="bottom" constant="40" id="HK9-PY-8VT"/>
+                            <constraint firstItem="Qb0-8C-JIF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="JQp-Nj-OHV"/>
+                            <constraint firstItem="Qb0-8C-JIF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cFL-K0-bb0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qb0-8C-JIF" secondAttribute="trailing" constant="20" id="spr-Am-qJp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Time Capsule" id="tYh-9e-61a"/>
+                    <connections>
+                        <outlet property="DayButton" destination="lcO-Jb-mam" id="lYD-PO-y1a"/>
+                        <outlet property="halfDayButton" destination="nho-e5-AVz" id="JWg-m0-HYX"/>
+                        <outlet property="monthButton" destination="7Oq-lx-Lm3" id="Xpw-Zf-edj"/>
+                        <outlet property="weekButton" destination="yVK-hM-ZbF" id="vub-a1-nwL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="780.91603053435108" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Jik-Ca-xk5">
+            <objects>
+                <navigationController storyboardIdentifier="TimeNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="7yV-LG-SNV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ROC-rZ-r7i">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="uPB-St-adW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J8J-Mb-Xha" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.76335877862595414" y="3.5211267605633805"/>
+        </scene>
+        <!--Day-->
+        <scene sceneID="CNV-aC-q3W">
+            <objects>
+                <viewController id="0qj-L7-BzU" customClass="DayUIViewController" customModule="TimeCapsule" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Klp-wk-9w6">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pWR-Dx-e51">
+                                <rect key="frame" x="20" y="133" width="353" height="300"/>
+                                <color key="backgroundColor" red="0.96862745289999996" green="0.80392158030000005" blue="0.51372551919999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="6nu-Yv-3RJ"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jGi-Ch-1bH">
+                                <rect key="frame" x="20" y="443" width="353" height="55"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SMp-LZ-dfH">
+                                        <rect key="frame" x="0.0" y="0.0" width="166.66666666666666" height="55"/>
+                                        <color key="backgroundColor" red="0.96862745289999996" green="0.80392158030000005" blue="0.51372551919999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" cornerStyle="medium">
+                                            <imageReference key="image" image="camera" catalog="system" symbolScale="large"/>
+                                            <backgroundConfiguration key="background"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="dayCameraButtonTapped:" destination="0qj-L7-BzU" eventType="touchUpInside" id="zOk-Gv-LWG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7x-2E-qRC">
+                                        <rect key="frame" x="186.66666666666663" y="0.0" width="166.33333333333337" height="55"/>
+                                        <color key="backgroundColor" red="0.96862745098039216" green="0.80392156862745101" blue="0.51372549019607838" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button">
+                                            <imageReference key="image" image="lock" catalog="system" symbolScale="large"/>
+                                        </state>
+                                        <buttonConfiguration key="configuration" style="plain" cornerStyle="medium">
+                                            <imageReference key="image" image="lock" catalog="system" symbolScale="large"/>
+                                            <backgroundConfiguration key="background"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="dayLockButtonTapped:" destination="0qj-L7-BzU" eventType="touchUpInside" id="9gP-Si-rpI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="r3w-mE-Zgg"/>
+                        <constraints>
+                            <constraint firstItem="pWR-Dx-e51" firstAttribute="top" secondItem="r3w-mE-Zgg" secondAttribute="top" constant="30" id="0ny-S4-Mu1"/>
+                            <constraint firstItem="pWR-Dx-e51" firstAttribute="trailing" secondItem="jGi-Ch-1bH" secondAttribute="trailing" id="Gi6-dg-wUO"/>
+                            <constraint firstItem="jGi-Ch-1bH" firstAttribute="leading" secondItem="r3w-mE-Zgg" secondAttribute="leading" constant="20" id="LCb-qg-4as"/>
+                            <constraint firstItem="pWR-Dx-e51" firstAttribute="leading" secondItem="jGi-Ch-1bH" secondAttribute="leading" id="Nyd-Va-X3h"/>
+                            <constraint firstItem="jGi-Ch-1bH" firstAttribute="top" secondItem="pWR-Dx-e51" secondAttribute="bottom" constant="10" id="vY7-ZX-kIu"/>
+                            <constraint firstItem="r3w-mE-Zgg" firstAttribute="trailing" secondItem="jGi-Ch-1bH" secondAttribute="trailing" constant="20" id="wSQ-4B-gW3"/>
+                            <constraint firstItem="r3w-mE-Zgg" firstAttribute="bottom" secondItem="jGi-Ch-1bH" secondAttribute="bottom" constant="320" id="zS7-D4-uKZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Day" id="mYp-yG-72O">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="Dbr-JO-4Zy">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="2Lh-45-LaH" kind="unwind" unwindAction="unwindToHome:" id="Vnq-8q-1RT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="dayCameraButton" destination="SMp-LZ-dfH" id="HOS-Mh-nAM"/>
+                        <outlet property="dayLockButton" destination="a7x-2E-qRC" id="qTu-1k-mny"/>
+                        <outlet property="dayUIImageView" destination="pWR-Dx-e51" id="IZM-So-Spn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fda-70-wX7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="2Lh-45-LaH" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2372" y="-163"/>
+        </scene>
+        <!--Week-->
+        <scene sceneID="c6l-yz-IDk">
+            <objects>
+                <viewController id="qIB-QR-6s4" customClass="WeekUIViewController" customModule="TimeCapsule" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fnF-T0-4oK">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YFq-yu-5ex">
+                                <rect key="frame" x="20" y="133" width="353" height="300"/>
+                                <color key="backgroundColor" red="0.42745098469999998" green="0.63921570780000003" blue="0.85882353779999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="54b-S4-dDS"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="L72-jg-mXS">
+                                <rect key="frame" x="20" y="443" width="353" height="55"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVi-li-Mbu">
+                                        <rect key="frame" x="0.0" y="0.0" width="166.66666666666666" height="55"/>
+                                        <color key="backgroundColor" red="0.35686274509803922" green="0.6470588235294118" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" cornerStyle="medium">
+                                            <imageReference key="image" image="camera" catalog="system" symbolScale="large"/>
+                                            <backgroundConfiguration key="background"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3pI-yh-tpm">
+                                        <rect key="frame" x="186.66666666666663" y="0.0" width="166.33333333333337" height="55"/>
+                                        <color key="backgroundColor" red="0.35686274509803922" green="0.6470588235294118" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button">
+                                            <imageReference key="image" image="lock" catalog="system" symbolScale="large"/>
+                                        </state>
+                                        <buttonConfiguration key="configuration" style="plain" cornerStyle="medium">
+                                            <imageReference key="image" image="lock" catalog="system" symbolScale="large"/>
+                                            <backgroundConfiguration key="background"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="T7S-xC-xvY"/>
+                        <constraints>
+                            <constraint firstItem="L72-jg-mXS" firstAttribute="top" secondItem="YFq-yu-5ex" secondAttribute="bottom" constant="10" id="MMx-PN-Hnq"/>
+                            <constraint firstItem="YFq-yu-5ex" firstAttribute="trailing" secondItem="L72-jg-mXS" secondAttribute="trailing" id="QYM-vJ-TXg"/>
+                            <constraint firstItem="L72-jg-mXS" firstAttribute="leading" secondItem="T7S-xC-xvY" secondAttribute="leading" constant="20" id="VVb-23-qBt"/>
+                            <constraint firstItem="T7S-xC-xvY" firstAttribute="bottom" secondItem="L72-jg-mXS" secondAttribute="bottom" constant="320" id="eeo-UA-IQS"/>
+                            <constraint firstItem="YFq-yu-5ex" firstAttribute="leading" secondItem="L72-jg-mXS" secondAttribute="leading" id="n0C-jY-6Ai"/>
+                            <constraint firstItem="YFq-yu-5ex" firstAttribute="top" secondItem="T7S-xC-xvY" secondAttribute="top" constant="30" id="rPW-Au-6wX"/>
+                            <constraint firstItem="T7S-xC-xvY" firstAttribute="trailing" secondItem="L72-jg-mXS" secondAttribute="trailing" constant="20" id="tId-WH-WzN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Week" id="YN2-6A-XGg">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="EeC-Lp-7Lc">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="zN8-0c-wiQ" kind="unwind" unwindAction="unwindToHome:" id="tYp-QL-2WK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="weekCameraButton" destination="DVi-li-Mbu" id="bbG-nv-iKu"/>
+                        <outlet property="weekLockButton" destination="3pI-yh-tpm" id="jKm-BA-ziX"/>
+                        <outlet property="weekUIImageView" destination="YFq-yu-5ex" id="D3I-o8-yLA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Pp-W8-4Q7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="zN8-0c-wiQ" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1647" y="487"/>
+        </scene>
+        <!--Month-->
+        <scene sceneID="mgt-T4-Kpd">
+            <objects>
+                <viewController id="fGe-xg-6bj" customClass="MonthUIViewController" customModule="TimeCapsule" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6ST-Xi-yeZ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="va7-gy-8eB">
+                                <rect key="frame" x="20" y="133" width="353" height="300"/>
+                                <color key="backgroundColor" red="0.69411766529999996" green="0.4352940917" blue="0.86274516580000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="5ia-HV-ngj"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="pqG-cc-4G5">
+                                <rect key="frame" x="20" y="443" width="353" height="55"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uuF-HT-AuM">
+                                        <rect key="frame" x="0.0" y="0.0" width="166.66666666666666" height="55"/>
+                                        <color key="backgroundColor" red="0.73725490196078436" green="0.41960784313725491" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <imageReference key="image" image="camera" catalog="system" symbolScale="large"/>
+                                            <backgroundConfiguration key="background"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ee-Eh-fwh">
+                                        <rect key="frame" x="186.66666666666663" y="0.0" width="166.33333333333337" height="55"/>
+                                        <color key="backgroundColor" red="0.73725490196078436" green="0.41960784313725491" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button">
+                                            <imageReference key="image" image="lock" catalog="system" symbolScale="large"/>
+                                        </state>
+                                        <buttonConfiguration key="configuration" style="plain" cornerStyle="capsule">
+                                            <imageReference key="image" image="lock" catalog="system" symbolScale="large"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="S18-4p-1KS"/>
+                        <constraints>
+                            <constraint firstItem="pqG-cc-4G5" firstAttribute="top" secondItem="va7-gy-8eB" secondAttribute="bottom" constant="10" id="5W1-oG-WTQ"/>
+                            <constraint firstItem="va7-gy-8eB" firstAttribute="top" secondItem="S18-4p-1KS" secondAttribute="top" constant="30" id="Isy-XF-JaU"/>
+                            <constraint firstItem="S18-4p-1KS" firstAttribute="trailing" secondItem="pqG-cc-4G5" secondAttribute="trailing" constant="20" id="LjY-CO-Sgg"/>
+                            <constraint firstItem="pqG-cc-4G5" firstAttribute="leading" secondItem="S18-4p-1KS" secondAttribute="leading" constant="20" id="XIH-on-gVR"/>
+                            <constraint firstItem="va7-gy-8eB" firstAttribute="trailing" secondItem="pqG-cc-4G5" secondAttribute="trailing" id="eI8-PY-cba"/>
+                            <constraint firstItem="va7-gy-8eB" firstAttribute="leading" secondItem="pqG-cc-4G5" secondAttribute="leading" id="uzX-cm-0HP"/>
+                            <constraint firstItem="S18-4p-1KS" firstAttribute="bottom" secondItem="pqG-cc-4G5" secondAttribute="bottom" constant="320" id="wch-Xh-Kvt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Month" id="569-yB-ITe">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="SVY-ND-nJD">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="7Uv-4P-aEN" kind="unwind" unwindAction="unwindToHome:" id="BJA-Dy-wIb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="MonthLockButton" destination="1ee-Eh-fwh" id="gaz-f1-hVy"/>
+                        <outlet property="monthCameraButton" destination="uuF-HT-AuM" id="Rk4-jE-0A7"/>
+                        <outlet property="monthUIImageView" destination="va7-gy-8eB" id="CEP-Oh-WCw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BJ0-P1-vPp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="7Uv-4P-aEN" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2372" y="487"/>
+        </scene>
+        <!--HalfDay-->
+        <scene sceneID="EUi-W8-LRc">
+            <objects>
+                <viewController id="0xK-d8-mMT" customClass="HalfDayUIViewController" customModule="TimeCapsule" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8R9-3V-9Rv">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MeS-wo-kCQ">
+                                <rect key="frame" x="20" y="133" width="353" height="300"/>
+                                <color key="backgroundColor" red="0.60784316059999999" green="0.60784316059999999" blue="0.50980395079999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="07Q-BE-LMO"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="IxI-Zg-iax">
+                                <rect key="frame" x="20" y="443" width="353" height="55"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iHJ-Gd-hb6">
+                                        <rect key="frame" x="0.0" y="0.0" width="166.66666666666666" height="55"/>
+                                        <color key="backgroundColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" cornerStyle="medium">
+                                            <imageReference key="image" image="camera" catalog="system" symbolScale="large"/>
+                                            <backgroundConfiguration key="background"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFL-0S-ddV">
+                                        <rect key="frame" x="186.66666666666663" y="0.0" width="166.33333333333337" height="55"/>
+                                        <color key="backgroundColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button">
+                                            <imageReference key="image" image="lock" catalog="system" symbolScale="large"/>
+                                        </state>
+                                        <buttonConfiguration key="configuration" style="plain" cornerStyle="medium">
+                                            <imageReference key="image" image="lock" catalog="system" symbolScale="large"/>
+                                            <backgroundConfiguration key="background"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GeZ-pl-KKE"/>
+                        <constraints>
+                            <constraint firstItem="GeZ-pl-KKE" firstAttribute="bottom" secondItem="IxI-Zg-iax" secondAttribute="bottom" constant="320" id="1m7-Oz-PSG"/>
+                            <constraint firstItem="MeS-wo-kCQ" firstAttribute="trailing" secondItem="IxI-Zg-iax" secondAttribute="trailing" id="L4x-ER-gIx"/>
+                            <constraint firstItem="MeS-wo-kCQ" firstAttribute="leading" secondItem="IxI-Zg-iax" secondAttribute="leading" id="QEx-dL-0S7"/>
+                            <constraint firstItem="MeS-wo-kCQ" firstAttribute="top" secondItem="GeZ-pl-KKE" secondAttribute="top" constant="30" id="Zy1-Ql-d01"/>
+                            <constraint firstItem="IxI-Zg-iax" firstAttribute="top" secondItem="MeS-wo-kCQ" secondAttribute="bottom" constant="10" id="mGz-NH-RQ8"/>
+                            <constraint firstItem="GeZ-pl-KKE" firstAttribute="trailing" secondItem="IxI-Zg-iax" secondAttribute="trailing" constant="20" id="mbF-8Y-XGe"/>
+                            <constraint firstItem="IxI-Zg-iax" firstAttribute="leading" secondItem="GeZ-pl-KKE" secondAttribute="leading" constant="20" id="xkQ-CI-1NS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="HalfDay" id="03L-p3-ZLj">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="h7R-i1-oqz">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="5yy-cc-JJA" kind="unwind" unwindAction="unwindToHome:" id="Tb0-cf-GzU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="halfDayCameraButton" destination="iHJ-Gd-hb6" id="evR-5x-R1n"/>
+                        <outlet property="halfDayLockButton" destination="EFL-0S-ddV" id="Udc-mK-3rM"/>
+                        <outlet property="halfDayUIImageView" destination="MeS-wo-kCQ" id="Z1K-Eu-nwD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mwc-gr-5PI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="5yy-cc-JJA" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1647" y="-163"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camera" catalog="system" width="128" height="93"/>
+        <image name="halfdayBanner" width="2048" height="1024"/>
+        <image name="lock" catalog="system" width="125" height="128"/>
+        <image name="monthBanner" width="2048" height="1024"/>
+        <image name="weekBanner" width="2048" height="1024"/>
+        <image name="yearBanner" width="2048" height="1024"/>
+    </resources>
+</document>
