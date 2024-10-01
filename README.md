@@ -28,13 +28,6 @@ Initial build using UIkit on Xcode 15, using Swift 5.
 
 
 ### Upcoming features
-- iOS compatability
-- Several new themed view controllers
-- Hint button to provide new letter without tallying as a guess
-- Haptics on iOS version
-
-
-<img width="803" alt="Screenshot 2024-09-11 at 11 31 54 PM" src="https://github.com/user-attachments/assets/e74ecabb-7b65-412d-9904-652d2ce6b52c">
-<img width="822" alt="Screenshot 2024-09-11 at 10 04 56 PM" src="https://github.com/user-attachments/assets/2b75bc25-0a3b-4160-916f-20ee2c8cf4af">
+- Sharing images with friends
 
 
